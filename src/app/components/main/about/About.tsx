@@ -8,7 +8,7 @@ export default function About(){
             <div className="container mx-auto px-5 lg:px-12 pb-12" id="about">
                 <h1 className={catalogStyles.catalog_title}>О нас</h1>
                 <div className="block lg:flex gap-14">
-                    <img className="mx-auto" src="/img/1.jpeg" width={500} height={0} alt='vagonss'/>
+                    <img className="mx-auto" src="./img/1.jpeg" width={500} height={0} alt='vagonss'/>
                     <p>
                         Наша компания специализируется на изготовлении высококачественных бытовок
                         и торговых павильонов по индивидуальным заказам. Мы предлагаем широкий
