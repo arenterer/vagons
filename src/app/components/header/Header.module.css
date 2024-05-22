@@ -80,6 +80,7 @@
     width: 46px;
     background-color: #363738;
     justify-content: center;
+    border-radius: 8px;
 }
 .dropDownWrapper span{
     padding:0;
