@@ -1,0 +1,10 @@
+.wrapper{
+    background-color: #363738;
+}
+.wrapperTwo{
+    background-color: #434343;
+    border-radius: 50px 50px 0 0;
+}
+.text{
+    font-size: 22px;
+}

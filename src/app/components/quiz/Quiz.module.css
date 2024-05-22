@@ -1,0 +1,22 @@
+.wrapper{
+    color: white;
+    height: 100%;
+}
+
+.active{
+    display: flex;
+}
+.inActive{
+    display: none;
+}
+
+.quizPage{
+
+    flex-direction: column;
+    height: 100%;
+}
+.buttons{
+
+    margin-top: auto;
+}
+@media

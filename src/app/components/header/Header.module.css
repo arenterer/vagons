@@ -1,0 +1,91 @@
+.header ul{
+    display: flex;
+
+}
+.header li{
+    padding: 15px 18px;
+    transition: opacity 500ms ease;
+    cursor: pointer;
+    font-weight: 300;
+    white-space: nowrap;
+}
+.header li:hover{
+    opacity: 0.5;
+}
+.header{
+    background: rgba(0, 0, 0, 0.243);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgb(2 58 81 / 15%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.nav_div{
+    border-top: 1px solid #acbbc33d;
+    border-bottom: 0 solid #eee;
+    width: 100%;
+}
+.logo{
+    font-weight: 600;
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+}
+.phone{
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    padding-bottom: 0;
+    padding-right: 15px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 300;
+}
+.phoneM{
+    color: white;
+    font-size: 28px;
+    text-decoration: none !important;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+
+    font-weight: 300;
+}
+.btn_new{
+    border-radius: 30px;
+    color: white;
+    transition: 0.2s linear;
+    background: #0b63f6;
+    padding: 15px 30px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.dropDown{
+    background-color: #363738;
+    border-radius: 15px;
+    color: white !important;
+}
+.dropDown a{
+    color: white !important;
+    font-size: 18px;
+}
+.dropDown ul{
+    display:flex;
+    flex-direction: column;
+}
+.dropDownWrapper button{
+
+    align-items: center;
+    height: 46px;
+    width: 46px;
+    background-color: #363738;
+    justify-content: center;
+}
+.dropDownWrapper span{
+    padding:0;
+}
+.dropDownWrapper svg{
+    height: 30px;
+    width:30px;
+    padding: 0;
+}

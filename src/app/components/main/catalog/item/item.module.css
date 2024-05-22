@@ -1,0 +1,52 @@
+.item{
+    width: 30%;
+    margin-bottom: 50px;
+    background-color: #363738;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 0 1px #363738;
+}
+
+.item img{
+    width: 100%;
+    transition: transform 500ms ease;
+}
+.item img:hover{
+    transform: scale(1.05);
+}
+.item h2,.item b,.item p{
+    margin: 10px 35px;
+
+}
+.item h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.item p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.price{
+    color: #5fa36a !important;
+    font-size: 22px;
+}
+.exi{
+    text-align: center;
+    font-size: 18px;
+    width: 91%;
+}
+.itemButton{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+
+@media (min-width: 0px) and (max-width: 1024px) {
+    .item{
+        width: 95%;
+        margin: 25px auto;
+    }
+}
