@@ -110,14 +110,16 @@ export default function Quiz({active,setActive}:any){
                     <div className="flex flex-col gap-4 h-full justify-between">
                         <div>
                             <h2 className='mb-8 text-2xl font-bold'>ОТДЕЛКА СНАРУЖИ</h2>
-                            <div className='flex justify-between px-12 mb-5'>
-                                <img className="rounded-3xl" src="./img/colorProf.png" alt="color"/>
-                                <img className="rounded-3xl" src="./img/zincProf.png" alt="color"/>
-                                <img className="rounded-3xl" src="./img/siding.png" alt="color"/>
+                            <div className={width <= 1024 ? 'hidden text-lg' : ''}>
+                                <div className='flex justify-between px-12 mb-5'>
+                                    <img className="rounded-3xl" src="./img/colorProf.png" alt="color"/>
+                                    <img className="rounded-3xl" src="./img/zincProf.png" alt="color"/>
+                                    <img className="rounded-3xl" src="./img/siding.png" alt="color"/>
+                                </div>
                             </div>
                             <SegmentedControl
                                 value={finishing} orientation={width <= 1024 ? "vertical" : "horizontal"}
-                                size={width<= 1024? "lg":"sm"}
+                                size={width <= 1024 ? "lg" : "sm"}
                                 onChange={setFinishing} fullWidth withItemsBorders={true} radius="md"
                                 data={['Профлист цветной', 'Профлист оцинковка', 'Металический сайдинг']}/>
                         </div>
@@ -132,9 +134,9 @@ export default function Quiz({active,setActive}:any){
                 <div className={active == 2 ? activeStyleQuiz : inActiveStyleQuiz}>
                     <div className="flex flex-col gap-4 h-full justify-between">
 
-                            <h2 className='mb-8 text-2xl font-bold'>ОТДЕЛКА ВНУТРИ</h2>
+                        <h2 className='mb-8 text-2xl font-bold'>ОТДЕЛКА ВНУТРИ</h2>
                         <div>
-                            <div className={width<=1024 ? 'hidden text-lg':''}>
+                            <div className={width <= 1024 ? 'hidden text-lg' : ''}>
                                 <div className='flex justify-between px-2 mb-5'>
                                     <img className=" rounded-3xl" src="./img/osp.png" alt="color"/>
                                     <img className="rounded-3xl" src="./img/plastic.png" alt="color"/>
@@ -144,7 +146,7 @@ export default function Quiz({active,setActive}:any){
                             </div>
                             <SegmentedControl value={outFinishing}
                                               orientation={width <= 1024 ? "vertical" : "horizontal"}
-                                              size={width<= 1024? "lg":"sm"}
+                                              size={width <= 1024 ? "lg" : "sm"}
                                               onChange={setOutFinishing} fullWidth withItemsBorders={true} radius="md"
                                               data={['ОСП 19мм', 'Пластиковые панели', 'Вагонка 14мм', 'Профлист цветной']}/>
                         </div>
