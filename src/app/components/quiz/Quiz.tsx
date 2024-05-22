@@ -33,7 +33,7 @@ export default function Quiz({active,setActive}:any){
     const handleSumbmit = async ({number,name}:typeof form.values): Promise<void> =>{
         try{
             setLoading(true)
-            const message = `УРААА ЗАЯВКА!!!%0AИмя: ${name}%0AТелефон: ${number}%0AДлина: ${length}м%0AОтделка снаружи: ${finishing}%0AОтделка внутри: ${outFinishing}%0AКоличество окон: ${windows}%0AРазмер окон ${windowsSize}%0AЭлектрика: ${electric}`;
+            const message = `Новая заявка!%0AИмя: ${name}%0AТелефон: ${number}%0AДлина: ${length}м%0AОтделка снаружи: ${finishing}%0AОтделка внутри: ${outFinishing}%0AКоличество окон: ${windows}%0AРазмер окон ${windowsSize}%0AЭлектрика: ${electric}`;
             await sendMessage(message)
             setLoading(false)
 
