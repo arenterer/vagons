@@ -1,8 +1,5 @@
 import styles from './Title.module.css'
 import btnStyles from '../../Buttons.module.css'
-import Image from 'next/image'
-import title from '../../../../../public/title.jpeg'
-import Link from 'next/link'
 import ModalButton from '../../button/ModalButton'
 export default function Title(){
     return (

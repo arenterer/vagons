@@ -1,7 +1,6 @@
 import styles from './Catalog.module.css'
 import {list} from './item/item'
-import {catalog} from "@/app/data";
-import * as http2 from "http2";
+
 
 export default function Catalog(){
 
