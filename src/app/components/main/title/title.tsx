@@ -1,6 +1,10 @@
 import styles from './Title.module.css'
 import btnStyles from '../../Buttons.module.css'
-import ModalButton from '../../button/ModalButton'
+import dynamic from 'next/dynamic'
+
+const ModalButton = dynamic(() => import('../../button/ModalButton'), {
+    ssr: false,
+})
 export default function Title(){
     return (
         <div className={styles.presentation}>

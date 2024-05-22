@@ -7,6 +7,7 @@ import About from "@/app/components/main/about/About";
 import Contact from "@/app/components/main/contact/Contact";
 import ScrollBtn from "@/app/components/button/scrollButton";
 
+
 export default function HomePage() {
   return (
       <>

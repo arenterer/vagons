@@ -7,6 +7,7 @@ import {useForm} from '@mantine/form'
 import {useEffect, useState} from 'react'
 import {sendMessage} from '@/api/telegramTest'
 import {useResize} from './/useEffect'
+
 export default function Quiz({active,setActive}:any){
     const [isLoading,setLoading] = useState(false)
 
